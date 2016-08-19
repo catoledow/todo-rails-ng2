@@ -1,5 +1,5 @@
 class TaskMailer < ApplicationMailer
-    default from: 'notifications@example.com'
+    default from: 'carlos.toledo@nightpay.com.br'
 
     def completion_email(task, color, message)
         @task = task;

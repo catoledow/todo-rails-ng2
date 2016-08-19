@@ -28,7 +28,7 @@ class Api::TasksController < ApplicationController
         task_params
 
         event = ToDoEvent.new
-        if params[:task][:completed] and !task.completed
+        if params[:task][:completed] == 'true' and !task.completed
             event.type = "completed"
         else
             event.type = "updated"

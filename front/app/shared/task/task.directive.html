@@ -1,0 +1,10 @@
+<link rel="stylesheet" href="task.directive.css"/>
+
+<li class="li-default">
+    <div class="checkbox">
+        <input (click)="sendUpdateCompleted()" [(ngModel)]="task.completed" type="checkbox" value="1" />
+        <input type="text" #content [ngClass]="setClasses()" [(ngModel)]="task.content" value="{{task.content}}" (keyup.enter)="sendUpdate($event)" (blur)="sendUpdate($event)">
+
+        <button (click)="sendRemove()"><span class="glyphicon glyphicon-remove"></span></button>
+    </div>
+</li>

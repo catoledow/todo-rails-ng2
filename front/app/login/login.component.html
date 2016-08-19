@@ -1,0 +1,37 @@
+<link rel="stylesheet" href="login.component.css"/>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="wall" *ngIf="showLogin">
+                <img class="logo" src="http://www.clipartbest.com/cliparts/ncE/Erx/ncEErxzpi.png"
+                    alt="">
+                <h2 class="text-center">Login</h2>
+                <form class="form-login" (submit)="tryLogin()">
+                    <div class="input-fixed">
+                        <input type="text" [(ngModel)]="loginEmail" name="loginPass" class="form-control" placeholder="E-mail" required autofocus>
+                        <input type="password" [(ngModel)]="loginPass" name="loginPass" class="form-control" placeholder="Senha" required>
+                    </div>
+                    <button class="btn btn-lg btn-primary btn-block" type="submit">Entrar</button>
+                    <button class="btn btn-lg btn-link btn-block" (click)="showLogin = !showLogin">Criar uma conta</button>
+                </form>
+            </div>
+
+            <div class="wall" *ngIf="!showLogin">
+                <img class="logo" src="http://www.clipartbest.com/cliparts/ncE/Erx/ncEErxzpi.png"
+                    alt="">
+                <h2 class="text-center">Nova Conta</h2>
+                <form class="form-login" (submit)="trySubscribe()">
+                    <div class="input-fixed">
+                        <input type="text" [(ngModel)]="newName" name="newName" class="form-control" placeholder="Nome" required autofocus>
+                        <input type="text" [(ngModel)]="newEmail" name="newEmail" class="form-control" placeholder="E-mail" required autofocus>
+                        <input type="password" [(ngModel)]="newPass" name="newPass" class="form-control" placeholder="Senha" required>
+                    </div>
+                    <button class="btn btn-lg btn-primary btn-block" type="submit">Cadastrar</button>
+                    <button class="btn btn-lg btn-link btn-block" (click)="showLogin = !showLogin">Já tem conta?</button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>

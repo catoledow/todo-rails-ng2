@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <script>document.write('');</script> -->
+    <base href="/" />
+    <title>To-do App</title>
+
+    <meta name="description" content="" />
+    <meta name="author" content="">
+
+    <meta name="Resource-type" content="Document" />
+
+    <meta property="og:title" content="" >
+    <meta property="og:type" content="website" >
+    <meta property="og:description" content="" >
+    <meta property="og:url" content="" >
+    <meta property="og:image" content="" >
+    <meta property="og:site_name" content="" >
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="" />
+    <meta name="twitter:title" content="" />
+    <meta name="twitter:description" content="" />
+    <meta name="twitter:image" content="" />
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="main.css"/>
+    <!-- 1. Load libraries -->
+     <!-- Polyfill(s) for older browsers -->
+    <script src="node_modules/core-js/client/shim.min.js"></script>
+    <script src="node_modules/zone.js/dist/zone.js"></script>
+    <script src="node_modules/reflect-metadata/Reflect.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+    <script src="node_modules/ng2-bootstrap/bundles/ng2-bootstrap.min.js"></script>
+
+    <!-- 2. Configure SystemJS -->
+    <script src="systemjs.config.js"></script>
+    <script>
+      System.import('app').catch(function(err){ console.error(err); });
+    </script>
+  </head>
+  <!-- 3. Display the application -->
+  <body>
+    <my-app>Carregando...</my-app>
+  </body>
+</html>

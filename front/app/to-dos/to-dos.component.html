@@ -1,0 +1,20 @@
+<link rel="stylesheet" href="to-dos.component.css"/>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="wall todolist">
+                <img class="logo" src="http://www.clipartbest.com/cliparts/ncE/Erx/ncEErxzpi.png">
+
+                <h2 class="text-center">Minhas tarefas</h2>
+                <input class="form-control" [(ngModel)]="newToDo" name="todo" placeholder="Nova tarefa..." (keyup.enter)="addItem()">
+                <hr>
+
+                <ul class="list-margin">
+                    <task *ngFor="let t of userService.user.tasks" [task]="t" (update)="updateItem($event)" (remove)="removeItem($event)">
+                    </task>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

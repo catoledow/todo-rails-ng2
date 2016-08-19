@@ -1,0 +1,31 @@
+
+li.li-default{
+    background:#fafafa;
+    border:none;
+    border-bottom:1px solid #eee;
+    height: 30px;
+    width: 95%;
+}
+
+.done {
+    text-decoration:line-through;
+}
+
+input[type="text"] {
+    border: none;
+    background: none;
+    margin: 0 0 0 10px;
+    outline: none;
+    width: 80%;
+    font-style: normal;
+}
+
+input[type="text"].notbold {
+    font-style: oblique;
+}
+
+button {
+    background: none;
+    border: none;
+    float: right;
+}

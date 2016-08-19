@@ -48,3 +48,4 @@ end
 gem "devise"
 gem 'rack-cors', :require => 'rack/cors'
 gem 'pg'
+gem 'puma'

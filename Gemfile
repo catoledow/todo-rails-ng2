@@ -49,3 +49,4 @@ gem "devise"
 gem 'rack-cors', :require => 'rack/cors'
 gem 'pg'
 gem 'puma'
+gem 'postmark-rails', '>= 0.10.0'
